@@ -1,0 +1,278 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden; /* Allow vertical scroll, prevent horizontal */
+  background-color: #f0f0f0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+}
+
+#three-js-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Skills Section */
+#skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+#skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+
+#skills .skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+#skills .skill:hover img {
+  transform: rotateY(360deg);
+}
+
+#skills .skill p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Timeline (Work Experience) */
+#work-experience {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 40px;
+  z-index: 5; /* Added z-index to ensure visibility */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0; /* Start hidden for sliding effect */
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.timeline-item.slide-in {
+  opacity: 1; /* Become visible */
+  transform: translateX(0); /* Slide in */
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timeline-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline-content {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-left: 60px;
+  color: #fff;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* What Others Say Section */
+#what-others-say .testimonial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#what-others-say .testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#what-others-say blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+/* Projects Section */
+#projects .project {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+#projects .project h3 {
+  color: #0077be;
+}
+
+#projects .project-media {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#projects .project iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#projects .project p {
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+#projects .project p strong {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 80%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #0077be;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact .social-icons {
+  margin-top: 1rem;
+}
+
+#contact .social-icons a {
+  color: white;
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+/* Stars Animation */
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes rotate {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+canvas {
+  display: block;
+}
+
+/* Additional Styles for Visual Appeal */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-media iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}

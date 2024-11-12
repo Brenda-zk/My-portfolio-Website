@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://kit.fontawesome.com/9eb0b37960.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#what-others-say">What Others Say</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I am Brenda</h1>
+      <p>A Passionate Game Developer and Designer</p>
+    </div>
+    <div id="three-js-container"></div> <!-- Container for the 3D scene -->
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="images/Unity.png" alt="Unity 3D">
+        <p>Unity 3D</p>
+      </div>
+      <div class="skill">
+        <img src="images/Photoshop.png" alt="Photoshop">
+        <p>Adobe Photoshop</p>
+      </div>
+      <div class="skill">
+        <img src="images/blender.png" alt="Blender">
+        <p>Blender</p>
+      </div>
+      <div class="skill">
+        <img src="images/Substance.png" alt="Substance Painter">
+        <p>Substance Painter</p>
+      </div>
+      <div class="skill">
+        <img src="images/figma.png" alt="Figma">
+        <p>Figma</p>
+      </div>
+      <div class="skill">
+        <img src="images/Illustrator.png" alt="Illustrator">
+        <p>Adobe Illustrator</p>
+      </div>
+      <div class="skill">
+        <img src="images/3ds max.png" alt="3Ds Max">
+        <p>3Ds Max</p>
+      </div>
+      <div class="skill">
+        <img src="images/unreal.png" alt="Unreal Engine">
+        <p>Unreal Engine</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>Last Stand: Zombie Apocalypse</h3>
+      <div class="project-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UR75NH28euo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>This project is a survival game where players face waves of zombies. I was responsible for developing the combat system, AI for enemies, and level design to create an immersive experience.</p>
+      <p><strong>Programming Languages/Technologies Used:</strong> C#, Unity</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>Python Learn</h3>
+      <div class="project-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XjuhQUqr0tg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>Python Learn is an educational project designed to teach students the basics of Python programming through gamified learning experiences.</p>
+      <p><strong>Programming Languages/Technologies Used:</strong> Python, Django</p>
+    </div>
+
+
+    <!-- Project 3 -->
+    <div class="project">
+      <h3>Martial Artist</h3>
+      <div class="project-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Okg8HLyDZAE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>A combat-based action game focusing on martial arts, featuring different fighting styles and combo moves. I developed the combo system and worked on game animations.</p>
+      <p><strong>Programming Languages/Technologies Used:</strong> C#, Unity</p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+      <h3>Cyberpunk Urban</h3>
+      <div class="project-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FDHuehq6Mz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>An immersive experience exploring a cyberpunk city with neon lights and high-tech gadgets. Responsible for environmental design and shaders.</p>
+      <p><strong>Programming Languages/Technologies Used:</strong> C#, Unity, Shader Graph</p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project">
+      <h3>Crime Detective Hologram</h3>
+      <div class="project-media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j6uSOXK3Ka4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>A detective game that utilizes holographic technology to solve crimes. I developed hologram effects and interaction with the virtual environment.</p>
+      <p><strong>Programming Languages/Technologies Used:</strong> C#, Unity, VFX Graph</p>
+    </div>
+
+
+  <!-- What Others Say Section -->
+  <section id="what-others-say">
+    <h2>What Others Say</h2>
+    <div class="testimonial">
+      <img src="images/sharizaal.jpg" alt="Sharizal Pujahaas">
+      <blockquote>
+        “She is a hardworking and active student who participates in class and group projects. Her work shows great promise, and she has a strong work ethic.”
+        <br> — Mr. Sharizal Pujahaas Bin Jaffar, Senior Lecturer, Asia Pacific University (APU)
+      </blockquote>
+    </div>
+    <div class="testimonial">
+      <img src="images/lorraine.jpg" alt="Lorraine Dias">
+      <blockquote>
+        "Brenda is passionate about writing code and solving clients’ problems through the development of creative and innovative software. A keen learner, Brenda takes courses frequently to stay up-to-date on the latest techniques in software development."
+        <br> — Lorraine Dias, MEDA HR Practitioner
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/brenda-k/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:Bzkiwelu@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/BrendaKiwelu" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
